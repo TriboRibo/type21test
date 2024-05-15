@@ -121,11 +121,9 @@ const itemsCanFound = [
     }
 ]
 
-import {goToPeopleShop} from "./mainGame.js";
-import {goToUpgradeShop} from "./mainGame.js";
-import {goBackFromPeople, peopleArray, boughtArray} from "./peopleShop.js";
+import {goToPeopleShop, goToUpgradeShop} from "./mainGame.js";
+import {appendPeople, boughtArray, goBackFromPeople, peopleArray} from "./peopleShop.js";
 import {goBackFromUpgrade} from "./upgradeShop.js";
-import {appendPeople} from "./peopleShop.js";
 
 goToPeopleShop();
 appendPeople(peopleArray, boughtArray);
