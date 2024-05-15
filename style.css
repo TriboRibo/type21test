@@ -1,0 +1,92 @@
+.toolbar {
+  border: 1px solid black;
+  border-radius: 10px;
+  font-family: "Rubik Marker Hatch", system-ui;
+  letter-spacing: 2px;
+  font-size: 20px;
+  padding: 10px;
+  margin: 5px;
+  user-select: none;
+}
+
+.mainWindow {
+  padding: 10px;
+  margin: 5px;
+}
+
+.box {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+  font-family: "Rubik Marker Hatch", system-ui;
+  letter-spacing: 2px;
+  font-size: 20px;
+  user-select: none;
+}
+
+.humanCard {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+}
+.humanCard:hover {
+  cursor: pointer;
+  scale: 1.01;
+}
+
+.icon {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.itemCard {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+}
+.itemCard:hover {
+  cursor: pointer;
+  scale: 1.01;
+}
+
+.upgrades {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+  font-family: "Rubik Marker Hatch", system-ui;
+  letter-spacing: 2px;
+  font-size: 20px;
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+  user-select: none;
+}
+
+.upgradeCard {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+}
+.upgradeCard:hover {
+  cursor: pointer;
+  scale: 1.01;
+}
+
+.upgradesContainer {
+  width: auto;
+  height: 100vh;
+}
+
+.selected {
+  border: 3px solid black;
+}
+
+/*# sourceMappingURL=style.css.map */

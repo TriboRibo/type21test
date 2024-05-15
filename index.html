@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friday game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+    <script type="module" src="script.js" defer></script>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanalei&family=Poetsen+One&family=Rubik+Burned&family=Rubik+Marker+Hatch&family=Rubik+Maze&family=Rubik+Puddles&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--Toolbar/navigation-->
+<div class="toolbar d-flex justify-content-around align-items-center">
+    <div class="d-flex gap-5">
+        <div id="money">Money: 0</div>
+        <div id="people">People: 0</div>
+        <div id="items">Items: 0</div>
+    </div>
+    <div class="d-flex gap-5">
+        <div class="btn btn-outline-dark" id="peopleShopButton">People Shop</div>
+        <div class="btn btn-outline-dark" id="upgradeShop">Upgrade Shop</div>
+    </div>
+</div>
+<div class="mainWindow d-flex">
+<!--Owned people table    -->
+    <div class="box col">
+        <div class="d-flex justify-content-center">People owned table</div>
+        <div class="humanCard d-flex flex-column gap-3">
+            <div class="d-flex gap-5 flex-wrap" id="boughtPeopleContainer">
+                <div>Icon</div>
+                <div>
+                    <div>Name:</div>
+                    <div>Search Time:</div>
+                    <div>Inventory capacity:</div>
+                </div>
+            </div>
+            <div class="btn btn-outline-dark">Send outside</div>
+        </div>
+    </div>
+    <div class="col">
+<!--    People looting outside window-->
+        <div class="box">
+            <div class="d-flex justify-content-center">People looting outside</div>
+            <div class="humanCard">
+                <div class="d-flex gap-5">
+                    <div class="icon">Icon</div>
+                    <div>
+                        <div>Time Left:</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--    Item inventory / found items window-->
+        <div class="box">
+            <div class="d-flex justify-content-center">Item inventory</div>
+            <div class="d-flex">
+                <div class="itemCard d-flex flex-column">
+                    <div>Icon</div>
+                    <div>Price:</div>
+                    <div class="btn btn-outline-dark">Sell</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="d-flex justify-content-center d-none">
+    <div class="btn btn-outline-dark" id="goBackFromUpgradeShop">Go Back</div>
+    <div class="btn btn-outline-dark" id="goBackFromPeopleShop">Go Back</div>
+    <div id="peopleContainer"></div>
+</div>
+</body>
+</html>
